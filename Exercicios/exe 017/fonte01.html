@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: "Work sans", Arial, Helvetica, sans-serif;
+           /* Medidas Absolutas
+           cm, mm, in (polegada), px, pt, pc
+
+              Medidas Relativas
+            em (tamanho atual da fonte), ex (altura X de uma fonte), rem(rut fonte do body), vw (lagura da vw port, largura da tela), vh (altura da vw port), %
+            
+             Usar apenas px e em (recomendacao w3c)
+
+             16px geralmente = 1em
+
+             Melhor usar o em para se adaptar melhor em cada tela
+           */
+           font-size: 1em;
+           /* lighter normal bold bolder */
+        }
+        
+        h1 {
+            /* Shorthand font
+            font-style -> font-weight -> fonte-size -> font family
+
+        font-style: italic
+        font-wieght: bolder
+        font-size: 3em
+        font-family: "work sans", Sans-serif
+        */
+        font: italic bolder 3em "work sans", sans-serif
+        }
+
+        h2{
+            font: bold 2em "work sans";
+        }
+       
+    </style>
+</head>
+<body>
+   <h1>Trabalhando com fontes</h1> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eum qui fugit delectus amet optio accusantium ea accusamus sunt! ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nam quod doloremque facere ipsa illo id voluptatibus, odit aperiam veritatis mollitia non? Repellendus reiciendis, vero commodi minus voluptatibus possimus est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde possimus omnis optio sequi mollitia incidunt, ea nisi tenetur soluta harum dolore suscipit neque earum perspiciatis. Mollitia soluta dolores et.</p>
+   <h2>Substitulo do exercicio</h2>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eius, error, eos mollitia accusantium at fuga recusandae dolor corporis aliquid sunt minus unde architecto fugiat voluptatem? Blanditiis quod ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt amet mollitia fuga possimus repellendus vel, quia ratione laborum eos ad blanditiis dolores tempore, aliquid ab est assumenda molestiae modi!</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero magni earum dignissimos aut sapiente, repellendus accusantium aliquid quisquam voluptatibus cupiditate officiis voluptatum architecto ad provident, sint reiciendis vel non aspernatur! Quod perspiciatis quia eligendi voluptates, enim sed nulla delectus soluta repudiandae debitis consectetur ea nostrum nihil praesentium incidunt pariatur aspernatur ipsum. Nisi veritatis distinctio corporis suscipit nihil accusamus odio? Eveniet sint enim distinctio asperiores eius vitae. Tempora vero voluptatum, assumenda incidunt cum culpa sapiente cupiditate, reprehenderit esse minus, similique unde sint eos quis labore error. Illum quisquam laborum, quod obcaecati iure perspiciatis voluptates dolorum nesciunt aut inventore, sit aliquid.</p>
+</body>
+</html>
