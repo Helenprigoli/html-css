@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -31,10 +32,19 @@
             padding: 10px;
             background-color: lightgrey;
         }
+        thead  {
+            position: sticky;
+            top: -1px;
+        }
+
 
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -175,7 +185,6 @@
                         <td>210.147,125</td>
                     </strong>
                 </tr>
-
             </tfoot>
         </table>
 </body>
