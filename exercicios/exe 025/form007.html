@@ -8,9 +8,36 @@
 </head>
 <body>
     <h1>Teste Formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
+
+        <P>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>Escolha</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">Sao Paulo</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MG">Mato Grosso</option>
+            </select>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Professor</option>
+                </datalist>
+                <p>
+                    <label for="imsg">Mensagem</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+                </p>
+            </p>
+        </P>
         <p>
+            
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
